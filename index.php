@@ -14,10 +14,11 @@ include 'includes/header.php';
         <h1 class="sky-page-title"> Dasboard</h1>
         <div class="sky-tabs">
             <div class="sky-tab active">Beranda</div>
-            <div class="sky-tab" onclick="window.location = '/SkyUniversity/courses.php'">Mata Kuliah</div>
-            <div class="sky-tab" onclick="window.location='/SkyUniversity/lecturers.php'">Dosen</div>
-            <div class="sky-tab" onclick="window.location = '/SkyUniversity/students.php'">Mahasiswa</div>
-            <div class="sky-tab"onclick="window.location ='/SkyUniversity/krs.php'">KRS</div>
+            <div class="sky-tab" onclick="window.location = '/Wano%20Saga%20University/courses.php'">Mata Kuliah</div>
+            <div class="sky-tab" onclick="window.location='/Wano%20Saga%20University/lecturers.php'">Dosen</div>
+            <div class="sky-tab" onclick="window.location = '/Wano%20Saga%20University/students.php'">Mahasiswa</div>
+            <div class="sky-tab"onclick="window.location ='/Wano%20Saga%20University/krs.php'">KRS</div>
+            <div class="sky-tab"onclick="window.location ='/Wano%20Saga%20University/classes.php'">Kelas</div>
         </div>
     </div>
 
@@ -56,18 +57,34 @@ include 'includes/header.php';
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="sky-card">
-            <h3 class="text-lg font-semibold mb-4">Fitur Sistem</h3>
-            <ul class="space-y-2 text-sm text-gray-600">
-                <li>• Manajemen data mahasiswa</li>
-                <li>• Pengelolaan mata kuliah dan kurikulum</li>
-                <li>• Tracking penugasan dosen</li>
-                <li>• Manajemen jadwal dan kapasitas kelas</li>
-                <li>• Pemrosesan Kartu Rencana Studi</li>
-                <li>• Manajemen tahun dan semester akademik</li>
-                <?php if ($auth->hasRole('admin')): ?>
-                <li>• <strong>Kelola akun pengguna sistem</strong></li>
-                <?php endif; ?>
-            </ul>
+            <h2>🎓 Fitur Sistem Informasi Akademik</h2>
+  <p>Sistem ini dirancang untuk mendukung kelancaran pengelolaan kegiatan akademik di lingkungan kampus. Berikut adalah fitur-fitur utama yang tersedia:</p>
+  <ul>
+    <li>
+      <strong>📋 Manajemen Data Mahasiswa</strong><br>
+      Mengelola informasi mahasiswa secara terpusat dan terintegrasi.
+    </li>
+    <li>
+      <strong>📚 Pengelolaan Mata Kuliah & Kurikulum</strong><br>
+      Menyusun dan memperbarui struktur kurikulum serta mata kuliah dengan mudah.
+    </li>
+    <li>
+      <strong>👨‍🏫 Tracking Penugasan Dosen</strong><br>
+      Memantau penugasan dosen pada setiap mata kuliah secara efisien.
+    </li>
+    <li>
+      <strong>🗓️ Manajemen Jadwal & Kapasitas Kelas</strong><br>
+      Menyusun jadwal kuliah dan mengatur kapasitas ruang kelas secara fleksibel.
+    </li>
+    <li>
+      <strong>📝 Pemrosesan Kartu Rencana Studi (KRS)</strong><br>
+      Memfasilitasi mahasiswa dalam pengisian dan validasi KRS secara daring.
+    </li>
+    <li>
+      <strong>📆 Manajemen Tahun & Semester Akademik</strong><br>
+      Mengelola periode akademik, kalender kuliah, serta jadwal penting lainnya.
+    </li>
+  </ul>
         </div>
 
         <div class="sky-card">
@@ -103,7 +120,7 @@ include 'includes/header.php';
     </div>
 
     <?php if ($auth->hasRole('admin')): ?>
-    <!-- Admin Quick Actions -->
+    
     <div class="sky-card mt-6">
         <h3 class="text-lg font-semibold mb-4">Aksi Cepat Administrator</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -127,7 +144,7 @@ include 'includes/header.php';
     </div>
     <?php endif; ?>
 
-    <div class="sky-footer">Copyright © Sky University 2025/2026</div>
+    <div class="sky-footer">Copyright © Wano Saga University 2025/2026</div>
 </div>
 
 <style>
