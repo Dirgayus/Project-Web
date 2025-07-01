@@ -1,4 +1,4 @@
-# 🎓 Sky University - Sistem KRS Management
+# 🎓 Wano Saga University - Sistem KRS Management
 
 Sistem Kartu Rencana Studi (KRS) untuk Sky University dengan fitur lengkap manajemen akademik.
 
